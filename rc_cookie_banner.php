@@ -46,7 +46,6 @@ class rc_cookie_banner extends rcube_plugin
 
     function insert_banner($p)
     {
-        // Se é apenas por sessão, verificar sessionStorage via JS, não aqui
         if (!isset($_COOKIE['rc_cookie_consent'])) {
             $banner_path = __DIR__ . '/banner.html';
             if (file_exists($banner_path)) {
