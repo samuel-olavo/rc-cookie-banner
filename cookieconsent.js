@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const consent = getStoredConsent();
 
     if (!consent) {
-        // Aplicar consentimento por omissão se estiver definido
         if (defaultConsent === 'accepted' || defaultConsent === 'rejected') {
             setStoredConsent(defaultConsent);
             if (defaultConsent === 'accepted') enableOptionalScripts();
