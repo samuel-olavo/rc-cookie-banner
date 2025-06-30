@@ -1,0 +1,125 @@
+#cookie-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 29998;
+    display: none;
+}
+#cookie-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2147483647;
+    /* Optional background image for the banner.
+     * Replace the URL below with your own image or remove this line to disable it.
+     */
+    background-image: url('#');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.92);
+    background-blend-mode: lighten;
+
+    max-width: 56rem;
+    height: 38rem;
+    width: 90%;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    display: none;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.cookie-content {
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Header */
+.cookie-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.25rem 0 1rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+.cookie-header span {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.cookie-body p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Categories */
+.cookie-categories {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.cookie-category-title {
+    font-size: 1.05rem;
+    font-weight: 900;
+    margin-bottom: 0.25rem;
+    color: #1f2937;
+}
+
+.cookie-category p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+
+.cookie-note {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    background-color: #e0f2fe;
+    color: #0284c7;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Buttons */
+.cookie-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cookie-buttons button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cookie-decline {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+#cookie-accept {
+    background-color: #16a34a;
+    color: #fff;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "samuelolavo/rc-cookie-banner",
+  "description": "Roundcube plugin to show a GDPR-compliant cookie consent banner.",
+  "type": "roundcube-plugin",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Samuel Olavo",
+      "email": "geral@samuelolavo.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "roundcube/plugin-installer": "^0.1.6"
+  },
+  "extra": {
+    "roundcube": {
+      "min-version": "1.5",
+      "plugin-dir": "rc_cookie_banner"
+    }
+  }
+}
